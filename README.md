@@ -1,6 +1,6 @@
 # elastic-query
 
-####A Scala/Ammonite script for Elastic Search scroll queries
+#### A Scala/Ammonite script for Elastic Search scroll queries
 
 *Prerequisites:*
 
