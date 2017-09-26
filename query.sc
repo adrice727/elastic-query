@@ -94,10 +94,8 @@ object Parser {
   * Elastic4S docs: https://sksamuel.github.io/elastic4s/docs/
   * ElasticSearch docs: https://www.elastic.co/guide/en/elasticsearch/client/java-api/current/index.html
   */
-val query =
-  search("myIndex")
-    .query(existsQuery("someRequiredField"))
-    .sortBy(FieldSortDefinition("timestamp"))
-    .sourceInclude("whatever", "fields", "you", "want")
+val searchDefinition = search("myIndex").query {
+  existsQuery("someRequiredField")
+} sortBy FieldSortDefinition("timestamp") sourceInclude("whatever", "fields", "you", "want")
 
-Parser.parse(ES.searchIndex(query))
+Parser.parse(ES.searchIndex(searchDefinition))
