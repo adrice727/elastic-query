@@ -9,8 +9,8 @@
 *Setup:*
 
  - Add your elastic search URI to the `client`
- - Assign `query` to a [SearchDefinition](https://goo.gl/FiAuyx)
- - Define your parser(s) and data transformations within the  `Parser` object
+ - Assign `searchDefinition` to a [SearchDefinition](https://goo.gl/FiAuyx)
+ - Define your parser(s) and data transformations within the `Parser` object
 
 *Run:*
 
